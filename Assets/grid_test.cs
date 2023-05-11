@@ -50,6 +50,19 @@ public class grid_test : MonoBehaviour
 
         tri_dict[6] = new Vector3[] { v_y, v_yx, v_zx, v_z, v_yz, v_zy };
         int_dict[6] = new int[] { 0, 1, 2, 0, 2, 3, 1, 4, 5, 1, 5, 2 };
+
+        tri_dict[7] = new Vector3[] { v_x, v_yx, v_zx, v_yz, v_zy };
+        int_dict[7] = new int[] { 0, 1, 2, 1, 3, 4, 1, 4, 2 };
+
+        tri_dict[8] = new Vector3[] { v_zy, v_yz, v_zyx };
+        int_dict[8] = new int[] { 0, 1, 2 };
+
+        tri_dict[9] = null;
+        int_dict[9] = null;
+
+        tri_dict[10] = null;
+        int_dict[10] = null;
+
      }
 
     void Gen(int index) {
