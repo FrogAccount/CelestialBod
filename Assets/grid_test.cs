@@ -11,6 +11,7 @@ public class grid_test : MonoBehaviour
     private Mesh mesh;
     private MeshRenderer mesh_rend;
     private Vector3[][] tri_dict = new Vector3[128][];
+    private int[][] int_dict = new int[128][];
 
     private Vector3 v_x   = new(0.5f, 0.0f, 0.0f);
     private Vector3 v_y   = new(0.0f, 0.5f, 0.0f);
@@ -33,9 +34,16 @@ public class grid_test : MonoBehaviour
 
         tri_dict[0] = null;
         tri_dict[1] = new Vector3[] { v_x, v_y, v_z };
+        int_dict[1] = new int[] { 0, 1, 2 };
+
         tri_dict[2] = new Vector3[] { v_z, v_zy, v_zx};
-        tri_dict[3] = new Vector3[] { v_x, v_y, v_zy};
+        int_dict[2] = new int[] { 0, 1, 2 };
+
+        tri_dict[3] = new Vector3[] { v_x, v_y, v_zy, v_zx};
+        int_dict[3] = new int[] { 0, 1, 2, 0, 2, 3 };
+
         tri_dict[4] = new Vector3[] { v_y, v_yx, v_yz };
+        int_dict[4] = new int[] { 0, 1, 2 };
     }
 
     void Gen(int index) {
@@ -48,7 +56,7 @@ public class grid_test : MonoBehaviour
         Vector3[] vector3s = new Vector3[tri_dict[index].Length];
         vector3s = tri_dict[index];
         mesh.vertices = vector3s;
-        mesh.triangles = new int[] { 0, 1, 2 };
+        mesh.triangles = int_dict[index];
         Debug.Log(mesh.vertices[0] + " " + mesh.vertices[1] + " " + mesh.vertices[2]);
         Debug.Log("FUCK");
     }
