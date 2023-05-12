@@ -79,7 +79,7 @@ public class grid_test : MonoBehaviour
         tri_dict[15] = new Vector3[] { v_x, v_yx, v_zyx, v_zx };
         int_dict[15] = new int[] { 0, 1, 2, 0, 2, 3 };
 
-        tri_dict[16] = new Vector3[] {v_x, v_xz, v_xy};
+        tri_dict[16] = new Vector3[] { v_x, v_xz, v_xy };
         int_dict[16] = new int[] { 0, 1, 2 };
 
         tri_dict[17] = new Vector3[] { v_xz, v_xy, v_y, v_z };
@@ -91,52 +91,112 @@ public class grid_test : MonoBehaviour
         tri_dict[19] = new Vector3[] { v_y, v_xy, v_zy, v_xz, v_zx };
         int_dict[19] = new int[] { 0, 2, 1, 3, 1, 2, 3, 2, 4 };
 
-        tri_dict[20] = new Vector3[] {v_x, v_xz, v_yz, v_y, v_xy, v_yx};
+        tri_dict[20] = new Vector3[] { v_x, v_xz, v_yz, v_y, v_xy, v_yx };
         int_dict[20] = new int[] { 0, 1, 2, 0, 2, 3, 5, 2, 1, 5, 1, 4 };
 
         tri_dict[21] = new Vector3[] { v_z, v_xz, v_yz, v_yx, v_xy };
         int_dict[21] = new int[] { 0, 1, 2, 3, 2, 4, 2, 1, 4 };
 
-        tri_dict[22] = new Vector3[] { v_xz, v_yx, v_yz, v_zx, v_z, v_y, v_x,  v_xy, v_zy};
-        int_dict[22] = new int[] { 0, 1, 2, 0, 2, 3, 4, 5, 6,  7, 1, 0, 8, 3, 2};
+        tri_dict[22] = new Vector3[] { v_xz, v_yx, v_yz, v_zx, v_z, v_y, v_x, v_xy, v_zy };
+        int_dict[22] = new int[] { 0, 1, 2, 0, 2, 3, 4, 5, 6, 7, 1, 0, 8, 3, 2 };
 
         tri_dict[23] = new Vector3[] { v_xz, v_xy, v_yx, v_yz, v_zy, v_zx };
-        int_dict[23] = new int[] { 0, 1, 2, 0, 2, 3, 0, 3, 5, 3, 4, 5};
+        int_dict[23] = new int[] { 0, 1, 2, 0, 2, 3, 0, 3, 5, 3, 4, 5 };
 
         tri_dict[24] = new Vector3[] { v_x, v_zy, v_yz, v_xy, v_xz, v_zyx };
-        int_dict[24] = new int[] { 0, 1, 2, 0, 2, 3, 3, 2, 5, 3, 5, 4, 4, 5, 1, 4, 1, 0};
+        int_dict[24] = new int[] { 0, 1, 2, 0, 2, 3, 3, 2, 5, 3, 5, 4, 4, 5, 1, 4, 1, 0 };
 
         tri_dict[25] = new Vector3[] { v_xy, v_xz, v_z, v_zy, v_yz, v_zyx, v_y };
-        int_dict[25] = new int[] { 0, 5, 1, 0, 4, 5, 0, 6, 4, 1, 5, 3, 1, 3, 2};
+        int_dict[25] = new int[] { 0, 5, 1, 0, 4, 5, 0, 6, 4, 1, 5, 3, 1, 3, 2 };
 
-        tri_dict[26] = new Vector3[] {v_x, v_xz, v_zyx, v_zx, v_z, v_yz, v_xy};
+        tri_dict[26] = new Vector3[] { v_x, v_xz, v_zyx, v_zx, v_z, v_yz, v_xy };
         int_dict[26] = new int[] { 0, 4, 5, 0, 5, 6, 6, 5, 2, 1, 6, 2, 1, 2, 3 };
 
         tri_dict[27] = new Vector3[] { v_y, v_xy, v_xz, v_yz, v_zyx, v_zx };
         int_dict[27] = new int[] { 0, 3, 1, 1, 3, 4, 1, 4, 2, 2, 4, 5 };
 
-        tri_dict[28] = new Vector3[] { v_xy, v_yx, v_zyx, v_xz, v_zy, v_x, v_y};
-        int_dict[28] = new int[] { 0, 1, 2, 0, 2, 3, 3, 2, 4, 3, 4, 5, 5, 4, 6};
+        tri_dict[28] = new Vector3[] { v_xy, v_yx, v_zyx, v_xz, v_zy, v_x, v_y };
+        int_dict[28] = new int[] { 0, 1, 2, 0, 2, 3, 3, 2, 4, 3, 4, 5, 5, 4, 6 };
 
         tri_dict[29] = new Vector3[] { v_xy, v_yx, v_zyx, v_xz, v_zy, v_z };
-        int_dict[29] = new int[] { 0, 1, 2, 0, 2, 3, 3, 2, 4, 3, 4, 5,};
+        int_dict[29] = new int[] { 0, 1, 2, 0, 2, 3, 3, 2, 4, 3, 4, 5, };
 
-        tri_dict[30] = new Vector3[] { v_xy, v_yx, v_zyx, v_xz, v_zx, v_x, v_y, v_z};
-        int_dict[30] = new int[] { 0, 1, 2, 0, 2, 3, 3, 2, 4, 5, 7, 6};
+        tri_dict[30] = new Vector3[] { v_xy, v_yx, v_zyx, v_xz, v_zx, v_x, v_y, v_z };
+        int_dict[30] = new int[] { 0, 1, 2, 0, 2, 3, 3, 2, 4, 5, 7, 6 };
 
         tri_dict[31] = new Vector3[] { v_xy, v_yx, v_zyx, v_xz, v_zx };
-        int_dict[31] = new int[] { 0, 1, 2, 0, 2, 3, 3, 2, 4};
+        int_dict[31] = new int[] { 0, 1, 2, 0, 2, 3, 3, 2, 4 };
 
         // THIS IS TOO MANY
 
         tri_dict[32] = new Vector3[] { v_xz, v_zx, v_xzy };
         int_dict[32] = new int[] { 0, 1, 2 };
 
+        tri_dict[33] = new Vector3[] { v_xz, v_zx, v_xzy, v_x, v_y, v_z };
+        int_dict[33] = new int[] { 0, 3, 4, 0, 4, 2, 1, 2, 4, 1, 4, 5 };
+
+        tri_dict[34] = new Vector3[] { v_z, v_zy, v_xzy, v_xz };
+        int_dict[34] = new int[] {0, 1, 2, 0, 2, 3};
+
+        tri_dict[35] = new Vector3[] { v_x, v_y, v_xzy, v_xz, v_zy};
+        int_dict[35] = new int[] { 0, 1, 2, 0, 2, 3, 1, 4, 2 };
+
+        tri_dict[36] = new Vector3[] { v_xz, v_zx, v_xzy, v_y, v_yz, v_yx };
+        int_dict[36] = new int[] { 0, 3, 5, 0, 5, 2, 5, 4, 2, 1, 2, 4, 1, 4, 3, 0, 1, 3 };
+
+        tri_dict[37] = new Vector3[] { v_xz, v_zx, v_xzy, v_yz, v_yx, v_z, v_x };
+        int_dict[37] = new int[] { 1, 3, 5, 1, 2, 3, 2, 4, 3, 0, 4, 2, 0, 6, 4 };
+
+        tri_dict[38] = new Vector3[] { v_yx, v_y, v_yz, v_z, v_zy, v_xzy, v_xz};
+        int_dict[38] = new int[] { 6, 0, 5, 6, 1, 0, 6, 3, 1, 5, 0, 2, 5, 2, 4 };
+
+        tri_dict[39] = new Vector3[] { v_x, v_yx, v_xz, v_xzy, v_yz, v_zy };
+        int_dict[39] = new int[] { 0, 1, 2, 2, 1, 3, 3, 1, 4, 3, 4, 5 };
+
+        tri_dict[40] = new Vector3[] { v_zy, v_yz, v_xz, v_zx, v_zyx, v_xzy };
+        int_dict[40] = new int[] { 0, 1, 2, 0, 2, 3, 1, 4, 5, 1, 5, 2 };
+
+        tri_dict[41] = new Vector3[] { v_x, v_y, v_yz, v_zyx, v_xzy, v_xz, v_z, v_zy, v_zx };
+        int_dict[41] = new int[] { 0, 1, 2, 0, 2, 3, 0, 3, 5, 5, 3, 4, 6, 8, 7 };
+
+        tri_dict[42] = new Vector3[] { v_z, v_yz, v_xz, v_zyx, v_xzy };
+        int_dict[42] = new int[] { 0, 1, 2, 1, 3, 4, 1, 4, 2 };
+
+        tri_dict[43] = new Vector3[] { v_x, v_y, v_yz, v_zyx, v_xzy, v_xz};
+        int_dict[43] = new int[] { 0, 1, 2, 0, 2, 3, 0, 3, 5, 5, 3, 4 };
+
+        tri_dict[44] = new Vector3[] { v_yx, v_zyx, v_xzy, v_xz, v_yz, v_zx, v_y, v_zy};
+        int_dict[44] = new int[] {0, 1, 2, 0, 2, 3, 3, 6, 0, 3, 5, 6, 5, 7, 6 };
+
+        tri_dict[45] = new Vector3[] { v_x, v_yx, v_xzy, v_xz, v_zyx, v_z, v_zx, v_zy };
+        int_dict[45] = new int[] { 0, 1, 3, 1, 2, 3, 1, 4, 2, 5, 6, 7 };
+
+        tri_dict[46] = new Vector3[] { v_y, v_yx, v_zyx, v_xzy, v_xz, v_z };
+        int_dict[46] = new int[] { 0, 1, 2, 0, 2, 3, 0, 3, 4, 0, 4, 5 };
+
+        tri_dict[47] = new Vector3[] { v_x, v_yx, v_xzy, v_xz, v_zyx};
+        int_dict[47] = new int[] { 0, 1, 3, 1, 2, 3, 1, 4, 2};
+
+        tri_dict[48] = new Vector3[] { v_zx, v_xzy, v_xy, v_x };
+        int_dict[48] = new int[] { 0, 1, 2, 0, 2, 3 };
+
+        tri_dict[49] = new Vector3[] { v_zx, v_xzy, v_xy, v_y, v_z };
+        int_dict[49] = new int[] { 1, 2, 3, 0, 1, 3, 0, 3, 4};
+
+        tri_dict[50] = new Vector3[] { };
+        int_dict[50] = new int[] { };
+
+        tri_dict[51] = new Vector3[] { v_y, v_zy, v_xzy, v_xy };
+        int_dict[51] = new int[] { 0, 1, 2, 0, 2, 3 };
+
         tri_dict[64] = new Vector3[] { v_xy, v_xyz, v_yx };
         int_dict[64] = new int[] { 0, 1, 2 };
 
         tri_dict[128] = new Vector3[] { v_xzy, v_zyx, v_xyz };
         int_dict[128] = new int[] { 0, 1, 2 };
+
+        tri_dict[240] = new Vector3[] { v_zx, v_zyx, v_yx, v_x };
+        int_dict[240] = new int[] { 0, 1, 2, 0, 2, 3 };
 
 
     }
