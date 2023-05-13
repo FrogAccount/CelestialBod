@@ -183,11 +183,35 @@ public class grid_test : MonoBehaviour
         tri_dict[49] = new Vector3[] { v_zx, v_xzy, v_xy, v_y, v_z };
         int_dict[49] = new int[] { 1, 2, 3, 0, 1, 3, 0, 3, 4};
 
-        tri_dict[50] = new Vector3[] { };
-        int_dict[50] = new int[] { };
+        tri_dict[50] = new Vector3[] {v_zy, v_xzy, v_xy, v_x, v_z };
+        int_dict[50] = new int[] {0 ,1 ,2, 0, 2, 3, 0, 3, 4};
 
         tri_dict[51] = new Vector3[] { v_y, v_zy, v_xzy, v_xy };
         int_dict[51] = new int[] { 0, 1, 2, 0, 2, 3 };
+
+        tri_dict[52] = new Vector3[] { v_yx, v_yz, v_y, v_x, v_xy, v_xzy, v_zx };
+        int_dict[52] = new int[] { 4, 0, 5, 0, 1, 5, 5, 1, 6, 6, 1, 2, 6, 2, 3 };
+
+        tri_dict[53] = new Vector3[] { v_yx, v_yz, v_xy, v_xzy, v_zx, v_z };
+        int_dict[53] = new int[] { 2, 0, 3, 0, 1, 3, 3, 1, 4, 4, 1, 5};
+
+        tri_dict[54] = new Vector3[] { v_xy, v_zy, v_xzy, v_yx, v_yz, v_x, v_z, v_y};
+        int_dict[54] = new int[] { 0, 1, 2, 0, 3, 4, 0, 4, 1, 5, 6, 7 };
+
+        tri_dict[55] = new Vector3[] { v_xy, v_zy, v_xzy, v_yx, v_yz};
+        int_dict[55] = new int[] { 0, 1, 2, 0, 3, 4, 0, 4, 1 };
+
+        tri_dict[56] = new Vector3[] { v_zx, v_zy, v_x, v_yz, v_xy, v_zyx, v_xzy};
+        int_dict[56] = new int[] {0, 1, 2, 1, 3, 2, 3, 4, 2, 3, 5, 4, 5, 6, 4};
+
+        tri_dict[57] = new Vector3[] { v_y, v_xzy, v_xy, v_yz, v_zyx, v_z, v_zx, v_zy };
+        int_dict[57] = new int[] { 0, 1, 2, 0, 3, 4, 0, 4, 1, 5, 6, 7};
+
+        tri_dict[58] = new Vector3[] { v_z, v_yz, v_zyx, v_xzy, v_x, v_xy };
+        int_dict[58] = new int[] { 0, 1, 4, 1, 5, 4, 1, 2, 5, 2, 3, 5};
+
+        tri_dict[59] = new Vector3[] { v_y, v_xzy, v_xy, v_yz, v_zyx};
+        int_dict[59] = new int[] { 0, 1, 2, 0, 3, 4, 0, 4, 1 };
 
         tri_dict[64] = new Vector3[] { v_xy, v_xyz, v_yx };
         int_dict[64] = new int[] { 0, 1, 2 };
