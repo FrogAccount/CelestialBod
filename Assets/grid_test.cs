@@ -171,6 +171,8 @@ public class grid_test : MonoBehaviour
         tri_dict[45] = new Vector3[] { v_x, v_yx, v_xzy, v_xz, v_zyx, v_z, v_zx, v_zy };
         int_dict[45] = new int[] { 0, 1, 3, 1, 2, 3, 1, 4, 2, 5, 6, 7 };
 
+        // 46!!
+
         tri_dict[46] = new Vector3[] { v_y, v_yx, v_zyx, v_xzy, v_xz, v_z };
         int_dict[46] = new int[] { 0, 1, 2, 0, 2, 3, 0, 3, 4, 0, 4, 5 };
 
